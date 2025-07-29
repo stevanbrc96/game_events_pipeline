@@ -6,7 +6,8 @@ Ovaj projekat je end-to-end data pipeline koji simulira prikupljanje, obradu, sk
 
 ## Arhitektura
 
-![Architecture Diagram](architecture.svg)
+![Architecture Diagram](architecture.png)
+
 
 ## ⚙️ Tehnologije
 
