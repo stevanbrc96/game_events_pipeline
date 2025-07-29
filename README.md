@@ -54,3 +54,18 @@ This project is an end-to-end data pipeline that simulates the collection, proce
     streamlit run dashboard.py
     ```
     *(Note: The `pip install` command installs the necessary libraries for Streamlit in your local Python environment, separate from Docker.)*
+    
+## Future Improvements: Cloud Migration to Azure
+
+This project serves as a local proof-of-concept, demonstrating the core principles of a data pipeline. For a real-world, production-grade system, the entire architecture would be migrated to a cloud platform like Microsoft Azure. This transition would provide significant benefits in scalability, reliability, security, and maintainability.
+
+The following table outlines a clear migration path, replacing each local component with its equivalent, fully-managed Azure service:
+    | Component          | Azure Service                                           |
+|--------------------|---------------------------------------------------------|
+| Data Ingestion     | **Azure Event Hubs** |
+| Data Storage       | **Azure SQL Database** |
+| Orchestration & ETL| **Azure Data Factory** |
+| Machine Learning   | **Azure Machine Learning** |
+| Visualization      | **Azure App Service** (hosting a Streamlit app)         |
+
+Migrating to this serverless, cloud-native architecture would create a more robust and efficient system, allowing the data team to focus on developing new features rather than managing infrastructure.
