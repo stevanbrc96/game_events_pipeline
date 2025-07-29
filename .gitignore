@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+*.env
+
+# Baza podataka i model
+*.db
+*.pkl
+
+# Docker
+.dockerignore
+
+# Logs
+logs/

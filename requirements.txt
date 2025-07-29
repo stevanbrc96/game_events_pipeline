@@ -1,0 +1,4 @@
+apache-airflow-providers-docker
+faker
+kafka-python-ng
+scikit-learn
