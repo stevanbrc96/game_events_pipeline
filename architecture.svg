@@ -1,4 +1,4 @@
-<svg width="802" height="202" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<svg width="802" height="202" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
@@ -9,29 +9,29 @@
   <g>
     <!-- Producer -->
     <rect x="1" y="71" width="100" height="60" fill="#e8f5e9" stroke="#333" stroke-width="1.5" rx="8" />
-    <text x="51" y="101" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">Producer</text>
+    <text x="51" y="105" font-family="Arial, sans-serif" font-size="14px" text-anchor="middle" fill="#333">Producer</text>
   </g>
   <line x1="101" y1="101" x2="131" y2="101" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
 
   <g>
     <!-- Kafka -->
     <rect x="131" y="71" width="100" height="60" fill="#e0f7fa" stroke="#333" stroke-width="1.5" rx="8" />
-    <text x="181" y="101" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">Kafka</text>
+    <text x="181" y="105" font-family="Arial, sans-serif" font-size="14px" text-anchor="middle" fill="#333">Kafka</text>
   </g>
   <line x1="231" y1="101" x2="261" y2="101" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
 
   <g>
     <!-- Consumer -->
     <rect x="261" y="71" width="100" height="60" fill="#e8f5e9" stroke="#333" stroke-width="1.5" rx="8" />
-    <text x="311" y="101" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">Consumer</text>
+    <text x="311" y="105" font-family="Arial, sans-serif" font-size="14px" text-anchor="middle" fill="#333">Consumer</text>
   </g>
   <line x1="361" y1="101" x2="391" y2="101" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
 
   <g>
     <!-- SQLite -->
     <rect x="391" y="71" width="100" height="60" fill="#fffde7" stroke="#333" stroke-width="1.5" rx="8" />
-    <text x="441" y="93" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">SQLite</text>
-    <text x="441" y="113" font-size="10px" text-anchor="middle" dominant-baseline="middle" fill="#333">raw_events</text>
+    <text x="441" y="98" font-family="Arial, sans-serif" font-size="14px" text-anchor="middle" fill="#333">SQLite</text>
+    <text x="441" y="116" font-family="Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#333">raw_events</text>
   </g>
   
   <!-- Strelica na dole i na gore -->
@@ -40,15 +40,15 @@
   <g>
     <!-- Aggregation & ML -->
     <rect x="561" y="71" width="120" height="60" fill="#f3e5f5" stroke="#333" stroke-width="1.5" rx="8" />
-    <text x="621" y="93" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">Aggregation</text>
-    <text x="621" y="113" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">&amp; ML Model</text>
+    <text x="621" y="98" font-family="Arial, sans-serif" font-size="14px" text-anchor="middle" fill="#333">Aggregation</text>
+    <text x="621" y="116" font-family="Arial, sans-serif" font-size="14px" text-anchor="middle" fill="#333">&amp; ML Model</text>
   </g>
   <line x1="681" y1="101" x2="701" y2="101" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
 
   <g>
     <!-- Dashboard -->
     <rect x="701" y="71" width="100" height="60" fill="#ffebee" stroke="#333" stroke-width="1.5" rx="8" />
-    <text x="751" y="101" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">Dashboard</text>
+    <text x="751" y="105" font-family="Arial, sans-serif" font-size="14px" text-anchor="middle" fill="#333">Dashboard</text>
   </g>
 
 </svg>
