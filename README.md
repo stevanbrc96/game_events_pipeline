@@ -1,56 +1,56 @@
 # Game Events Analytics Pipeline
 
-## Opis projekta
+## Project Description
 
-Ovaj projekat je end-to-end data pipeline koji simulira prikupljanje, obradu, skladištenje i analizu događaja iz mobilne igre. Pipeline je orkestriran pomoću Apache Airflow-a i uključuje i komponentu za mašinsko učenje koja predviđa odliv igrača (churn).
+This project is an end-to-end data pipeline that simulates the collection, processing, storage, and analysis of events from a mobile game. The pipeline is orchestrated using Apache Airflow and includes a machine learning component that predicts player churn.
 
-## Arhitektura
+## Architecture
 
 ![Architecture Diagram](architecture.png)
 
+## Technologies
 
-## ⚙️ Tehnologije
-
-| Komponenta         | Tehnologija           |
+| Component          | Technology             |
 |--------------------|------------------------|
-| Orkestracija       | Apache Airflow         |
-| Streaming          | Apache Kafka           |
-| Kontejnerizacija   | Docker, Docker Compose |
-| Baza podataka      | SQLite                 |
-| ETL/Analitika      | Pandas                 |
-| Mašinsko učenje    | Scikit-learn           |
-| Vizualizacija      | Streamlit              |
+| Orchestration      | Apache Airflow         |
+| Data Streaming     | Apache Kafka           |
+| Containerization   | Docker, Docker Compose |
+| Database           | SQLite                 |
+| ETL/Analytics      | Pandas                 |
+| Machine Learning   | Scikit-learn           |
+| Visualization      | Streamlit              |
 
-## Kako pokrenuti projekat
+## How to Run the Project
 
-### Preduslovi
+### Prerequisites
 
-- Docker i Docker Compose
+- Docker and Docker Compose
 - Python 3.8+
 
-### Koraci za pokretanje
+### Steps to Run
 
-1.  **Klonirajte repozitorijum:**
+1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/tvoje-ime/tvoj-repo.git](https://github.com/tvoje-ime/tvoj-repo.git)
-    cd tvoj-repo
+    git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
+    cd your-repo
     ```
 
-2.  **Izgradite i pokrenite Docker kontejnere:**
-    Ova komanda će podići Airflow, Kafku i sve ostale servise.
+2.  **Build and run the Docker containers:**
+    This command will start Airflow, Kafka, and all other services.
     ```bash
     docker-compose up --build -d
     ```
 
-3.  **Pristupite Airflow UI:**
-    Otvorite pretraživač i idite na `http://localhost:8080`. Ulogujte se sa `airflow` / `airflow`.
+3.  **Access the Airflow UI:**
+    Open a browser and go to `http://localhost:8080`. Log in with `airflow` / `airflow`.
 
-4.  **Pokrenite DAG:**
-    U Airflow UI, omogućite (un-pause) `game_events_pipeline` DAG i pokrenite ga ručno.
+4.  **Run the DAG:**
+    In the Airflow UI, enable (un-pause) the `game_events_pipeline` DAG and trigger it manually.
 
-5.  **Pokrenite Dashboard:**
-    Nakon što se DAG uspešno izvrši, pokrenite Streamlit dashboard u novom terminalu:
+5.  **Run the Dashboard:**
+    After the DAG has run successfully, start the Streamlit dashboard in a new terminal:
     ```bash
     pip install -r requirements.txt
     streamlit run dashboard.py
-    ````
+    ```
+    *(Note: The `pip install` command installs the necessary libraries for Streamlit in your local Python environment, separate from Docker.)*
