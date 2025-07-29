@@ -41,7 +41,7 @@
     <!-- Aggregation & ML -->
     <rect x="561" y="71" width="120" height="60" fill="#f3e5f5" stroke="#333" stroke-width="1.5" rx="8" />
     <text x="621" y="93" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">Aggregation</text>
-    <text x="621" y="113" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">& ML Model</text>
+    <text x="621" y="113" font-size="14px" text-anchor="middle" dominant-baseline="middle" fill="#333">&amp; ML Model</text>
   </g>
   <line x1="681" y1="101" x2="701" y2="101" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)" />
 
